@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Site.css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body style="background-image: url('../../Image/EV.jpg'); ">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+               
+                <div class="margin-left:-250px;">
+                    <img style="width:100px; height:30px;margin-top:15px" src="~/Image/GK_Logo2.jpg" />
+
+                </div>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                   
+                    <li>@Html.ActionLink("Logout", "Logout", "Display", null, new { style = "color: white" })</li>
+                </ul>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+    $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });</script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,69 @@
+﻿@model EVCharging.Data.Connector
+
+@{
+    ViewBag.Title = "Details of selected connector";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+
+<div>
+    <table>
+        <tr>
+            <th> @Html.DisplayName("Connector UuId")</th>
+            <td>@Html.DisplayFor(model => model.ConnectorUnId)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayName("Connector Name")</th>
+            <td> @Html.DisplayFor(model => model.Connector_Types.ConnectorName)</td>
+        </tr>
+
+        <tr>
+            <th> @Html.DisplayName("Location Name")</th>
+            <td>
+                @Html.DisplayFor(model => model.Location.LocationName)
+            </td>
+        </tr>
+        <tr>
+            <th> @Html.DisplayName("Charger Name")</th>
+            <td>
+
+                @Html.DisplayFor(model => model.Charger.ChargerName)
+            </td>
+        </tr>
+        <tr>
+            <th> @Html.DisplayName("SMS Code")</th>
+            <td> @Html.DisplayFor(model => model.SMSCode)</td>
+        </tr>
+        <tr>
+            <th>@Html.DisplayName("Connector Standard")</th>
+            <td> @Html.DisplayFor(model => model.Connector_Types.ConnectorStandard)</td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Connector Power Type")
+            </th>
+            <td>@Html.DisplayFor(model => model.Connector_Types.PowerType)</td>
+        </tr>
+        <tr>
+            <th>
+                @Html.DisplayName("Connector Category")
+            </th>
+            <td> @Html.DisplayFor(model => model.Connector_Types.ConnectorCategory)</td>
+        </tr>
+        <tr>
+            <th> @Html.DisplayName("Connector Formate")</th>
+            <td>  @Html.DisplayFor(model => model.Connector_Types.ConnectorFormate)</td>
+        </tr>
+
+
+    </table>
+
+
+
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", null,new { id = Model.Id, @class="btn btn-success" }) |
+    @Html.ActionLink("Cancel", "Index",null, new { @class = "btn btn-danger" })
+</p>
