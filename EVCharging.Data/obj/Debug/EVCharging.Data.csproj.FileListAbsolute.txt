@@ -69,3 +69,15 @@ C:\Users\sweta.mandani\DHRUVI\EVChargingSolution\EVCharging.Data\obj\Debug\EVCha
 C:\Users\sweta.mandani\DHRUVI\EVChargingSolution\EVCharging.Data\obj\Debug\EVCharging.Data.dll
 C:\Users\sweta.mandani\DHRUVI\EVChargingSolution\EVCharging.Data\obj\Debug\EVCharging.Data.pdb
 C:\Users\sweta.mandani\DHRUVI\EVChargingSolution\EVCharging.Data\obj\Debug\EVCharging.Data.csprojAssemblyReference.cache
+D:\Project\Final\EVCharging.Data\bin\Debug\EVCharging.Data.dll.config
+D:\Project\Final\EVCharging.Data\bin\Debug\EVCharging.Data.dll
+D:\Project\Final\EVCharging.Data\bin\Debug\EVCharging.Data.pdb
+D:\Project\Final\EVCharging.Data\bin\Debug\EntityFramework.dll
+D:\Project\Final\EVCharging.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Project\Final\EVCharging.Data\bin\Debug\EntityFramework.xml
+D:\Project\Final\EVCharging.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Project\Final\EVCharging.Data\obj\Debug\EVCharging.Data.csprojAssemblyReference.cache
+D:\Project\Final\EVCharging.Data\obj\Debug\EVCharging.Data.csproj.CoreCompileInputs.cache
+D:\Project\Final\EVCharging.Data\obj\Debug\EVCharging.Data.csproj.CopyComplete
+D:\Project\Final\EVCharging.Data\obj\Debug\EVCharging.Data.dll
+D:\Project\Final\EVCharging.Data\obj\Debug\EVCharging.Data.pdb

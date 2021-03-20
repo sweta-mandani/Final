@@ -8,7 +8,7 @@
 
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("+ Create New", "Create",null, new { @class = "btn btn-secondary" })
 </p>
 <table class="table">
     <tr>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.ServiceStatus)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ServiceID }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.ServiceID }, new { @class = "btn btn-info" }) 
         
-                @Html.ActionLink("Delete", "Delete", new { id = item.ServiceID })
+                @Html.ActionLink("Delete", "Delete", new { id = item.ServiceID }, new { @class = "btn btn-danger" })
             </td>
         </tr>
     }

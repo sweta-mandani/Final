@@ -7,7 +7,7 @@
 
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("+ Create New", "Create", null, new { @class = "btn btn-secondary" })
 </p>
 <table class="table">
     <tr>
@@ -38,9 +38,13 @@
                 @Html.DisplayFor(modelItem => item.Availability)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                <a href="@Url.Action("Edit", new { id = item.Id })">
+                    <i class="glyphicon glyphicon-pencil"></i>
+                    <span class="sr-only">Edit</span>
+                </a>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-info " })
 
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                @Html.ActionLink("Delete", "Delete", null, new { id = item.Id }, new { @class = "btn btn-danger" })
             </td>
         </tr>
     }

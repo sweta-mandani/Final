@@ -8,7 +8,7 @@
 
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("+ Create New", "Create",null, new { @class = "btn btn-secondary" })
 </p>
 <div>
 
@@ -34,9 +34,9 @@
                 @Html.DisplayFor(modelItem => item.StaticPageContent)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.StaticPageId }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.StaticPageId }, new { @class = "btn btn-info" }) 
 
-                @Html.ActionLink("Delete", "Delete", new { id = item.StaticPageId })
+                @Html.ActionLink("Delete", "Delete", new { id = item.StaticPageId }, new { @class = "btn btn-danger" })
             </td>
         </tr>
     }
